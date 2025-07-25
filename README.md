@@ -8,14 +8,14 @@ variance are known.
 
 ```bash
 # 1 · create an isolated environment
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
 
 # 2 · install minimal dependencies
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # 3 · run the benchmark (≈ 60 s on a laptop)
-python run_experiments.py      # writes results.csv
+python3 run_experiments.py      # writes results.csv
 ```
 
 ## What’s in `results.csv`
