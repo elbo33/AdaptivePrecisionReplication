@@ -1,1 +1,28 @@
-    .venv/
+# --- Python virtual environments ---------------------------------
+.venv/
+env/
+venv/
+
+# --- Python byte‑code / caches -----------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Packaging / build artifacts ---------------------------------
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+*.whl
+
+# --- Logs & experiment outputs -----------------------------------
+results.csv
+
+# --- Jupyter checkpoints -----------------------------------------
+.ipynb_checkpoints/
+
+# --- OS / editor miscellanea -------------------------------------
+.DS_Store
+.vscode/
+.idea/

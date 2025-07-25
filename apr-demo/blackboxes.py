@@ -20,7 +20,8 @@ class Dist:
             if name == "N":
                 return rng.normal(mu, sig, size=k)
             if name == "LN":
-                # solve for log‑normal parameters
+                if mu <= 0:
+                    return rng.normal(mu, sig, size=k)
                 var      = sig**2
                 phi      = np.sqrt(var + mu**2)
                 sigma_ln = np.sqrt(np.log((phi**2) / (mu**2)))

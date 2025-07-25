@@ -47,6 +47,9 @@ class APR:
         s    = y.std(ddof=1)
         eps_loose = s / np.sqrt(n)
 
+        if s == 0.0:
+            return mean, 0.0, n
+
         while True:
             c = t.ppf(1 - self.alpha / 2, df=n - 1) if n < 30 else norm.ppf(
                 1 - self.alpha / 2

@@ -14,7 +14,7 @@ source .venv/bin/activate      # Windows: .venv\Scripts\activate
 # 2 · install minimal dependencies
 pip3 install -r requirements.txt
 
-# 3 · run the benchmark (≈ 60 s on a laptop)
+# 3 · run the benchmark (≈ 10 min on a laptop)
 python3 run_experiments.py      # writes results.csv
 ```
 
